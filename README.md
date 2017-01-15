@@ -8,6 +8,7 @@ Log return calculation for stocks with custom date format.
 
 Data File: data/02_firmData.csv
 
+```
 +-------+----------+------+--------------------+
 |   firm|      date| price|              return|
 +-------+----------+------+--------------------+
@@ -32,3 +33,4 @@ Data File: data/02_firmData.csv
 |Daimler|2014-06-09| 64.64|-0.00213262532728...|
 |Daimler|2014-06-10| 64.63|-1.54714938035893...|
 +-------+----------+------+--------------------+
+```
