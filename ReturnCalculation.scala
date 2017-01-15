@@ -5,6 +5,7 @@ import org.apache.spark.sql.types.StructType
 val firm = StructField("firm", DataTypes.StringType)
 val date = StructField("date", DataTypes.DateType)
 val price = StructField("price", DataTypes.DoubleType)
+
 val dataFields = Array(firm, date, price)
 val dataFileSchema = StructType(dataFields)
 
