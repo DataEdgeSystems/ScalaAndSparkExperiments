@@ -34,3 +34,7 @@ Data File: data/02_firmData.csv
 |Daimler|2014-06-10| 64.63|-1.54714938035893...|
 +-------+----------+------+--------------------+
 ```
+
+## UnivariateSampling.scala (SPARK 2.1)
+
+Scala version of univariate sampling from https://www.mapr.com/ebooks/spark/08-unsupervised-anomaly-detection-apache-spark.html
