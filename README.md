@@ -1,8 +1,8 @@
-# Spark Solutions
+# Spark Solutions (SPARK 2.1)
 
 Code snippets of SPARK Scala code. 
 
-## ReturnCalculation.scala (SPARK 2.1)
+## ReturnCalculation.scala 
 
 Log return calculation for stocks with custom date format.
 
@@ -35,6 +35,6 @@ Data File: data/02_firmData.csv
 +-------+----------+------+--------------------+
 ```
 
-## UnivariateSampling.scala (SPARK 2.1)
+## UnivariateSampling.scala
 
 Scala version of univariate sampling from https://www.mapr.com/ebooks/spark/08-unsupervised-anomaly-detection-apache-spark.html
