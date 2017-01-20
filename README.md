@@ -1,6 +1,6 @@
-# Spark Solutions (SPARK 2.1)
+# Scala and Spark (2.1) Experiments 
 
-Code snippets of SPARK Scala code. 
+Code snippets of Scala and Spark code (on community editon of Databricks). 
 
 ## ReturnCalculation.scala 
 
