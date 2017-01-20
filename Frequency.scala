@@ -29,9 +29,13 @@ import org.apache.spark.sql.functions._
 val randInt: Double => Int = x => (x * 10).toInt
 val randIntUDF = udf(randInt)
 
-val n:Long = 100000
+val n:Long = 100000000
 val dfId = sqlContext.range(0, n)
 val df = dfId.select($"id", randIntUDF(rand()) as "n1", randIntUDF(rand()) as "n2", randIntUDF(rand()) as "n3", randIntUDF(rand()) as "n4").drop($"id").cache()
 
-val ft = frequency(df) // Command took 1.79 seconds on Databricks Community Edition
-val ftRdd = frequencyRDD(df) // Command took 0.46 seconds on Databricks Community Edition
+// cache DataFrame
+df.count()
+
+// frequency seems to be faster thant first transforming to rdd and then use reduceByKey
+val ft = frequency(df) // Command took 5.47 seconds on Databricks Community Edition
+val ftRdd = frequencyRDD(df) // Command took 18.83 seconds on Databricks Community Edition
