@@ -39,6 +39,6 @@ Data File: data/02_firmData.csv
 
 Scala version of univariate sampling from https://www.mapr.com/ebooks/spark/08-unsupervised-anomaly-detection-apache-spark.html
 
-## frequency.scala
+## Frequency.scala
 
 Performance tests for frequency table calculation on columns of a DataFrame
