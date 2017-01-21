@@ -39,3 +39,5 @@ df.count()
 // frequency seems to be faster thant first transforming to rdd and then use reduceByKey
 val ft = frequency(df) // Command took 5.47 seconds on Databricks Community Edition
 val ftRdd = frequencyRDD(df) // Command took 18.83 seconds on Databricks Community Edition
+
+// TODO: https://github.com/Ajk4/aggregators_batching
