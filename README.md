@@ -43,7 +43,7 @@ Scala version of univariate sampling from https://www.mapr.com/ebooks/spark/08-u
 
 Performance tests for frequency table calculation on columns of a DataFrame
 
-## AVFScoring.scala
+## AVFScoring.scala (https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/8100472355965647/225569915347134/8510365300034746/latest.html)
 
 Outlier detection for categorical data (attribute value frequency).
 
