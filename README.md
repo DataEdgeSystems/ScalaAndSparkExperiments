@@ -42,3 +42,9 @@ Scala version of univariate sampling from https://www.mapr.com/ebooks/spark/08-u
 ## Frequency.scala
 
 Performance tests for frequency table calculation on columns of a DataFrame
+
+## AVFScoring.scala
+
+Outlier detection for categorical data (attribute value frequency).
+
+
