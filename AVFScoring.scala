@@ -18,14 +18,14 @@ object AVFOutlier {
     udf(f)
   }
 
-  def frequencyMap(data: DataFrame): Map[String, Map[Int, Int]] = {
-    def f(ct: Map[String, Map[Int, Int]], cols: Array[String]): Map[String, Map[Int, Int]] = cols match {
+def frequencyMap(data: DataFrame): Map[String, Map[Any, Int]] = {
+    def f(ct: Map[String, Map[Any, Int]], cols: Array[String]): Map[String, Map[Any, Int]] = cols match {
       case cols if cols.length == 0 => ct
       case _ =>
         val col = cols.head
-        f(ct + (col -> data.groupBy(col).sum(col).collect.map(x => x.getInt(0) -> x.getAs[Int](1)).toMap), cols.tail)
+        f(ct + (col -> data.groupBy(col).count().collect.map(x => x.get(0) -> x.getAs[Int](1)).toMap), cols.tail)
     }
-    val ct: Map[String, Map[Int, Int]] = Map()
+    val ct: Map[String, Map[Any, Int]] = Map()
     f(ct, data.columns)
   }
 }
