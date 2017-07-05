@@ -4,7 +4,7 @@ Code snippets of Scala and Spark code (on community editon of Databricks).
 
 ## ReturnCalculation.scala 
 
-Log return calculation for stocks with custom date format.
+**Problem**: Calculate stock returns from stock prices in Apache SPARK for each company in the data set.  
 
 Data File: data/02_firmData.csv
 
@@ -41,9 +41,11 @@ Scala version of univariate sampling from https://www.mapr.com/ebooks/spark/08-u
 
 ## Frequency.scala
 
-Performance tests for frequency table calculation on columns of a DataFrame
+**Problem:** Calculate univariate frequency table for categorical data in Apache SPARK and test the performance.
 
 ## AVFScoring.scala 
+
+**Problem:** Perform outlier detection on categorical data in Apache SPARK.
 
 Outlier detection for categorical data (attribute value frequency). [Databricks Dashboard](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/8100472355965647/225569915347134/8510365300034746/latest.html)
 
